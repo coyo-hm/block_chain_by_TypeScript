@@ -1,0 +1,14 @@
+{
+    "include": ["src"], // 타입스크립트가 src의 모든 파일을 확인한다는 것을 의미
+    "compilerOptions": {
+        "outDir": "build", // outDir: 자바스크립트 파일일 생성될 디렉토리를 지정
+        "target": "ES6", // 어떤 버전의 자바스크립트로 타입스크립트를 컴파일하고 싶은지 나타냄
+        "lib": ["ES6", "DOM"], // 합쳐진 라이브러리의 정의 파일을 특정해주는 역할을 함
+        // 정의 파일의 목표로 하는 런타임 환경을 알려줌 : 자바스크립트 코드가 어디에서 동작할지 알려줌
+        // DOM: 타입스크립트 코드에서 document를 쓸 수 있음
+        "strict": true, // 모든 실수로 부터 보호
+        // "allowJs": true,
+        "esModuleInterop": true,
+        "module": "CommonJS",
+    }
+}
